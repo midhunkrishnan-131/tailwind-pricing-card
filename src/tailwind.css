@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Part C — the same repeated card styling expressed through @apply. */
+@layer components {
+  .pricing-card-apply {
+    @apply relative flex flex-col rounded-2xl border border-slate-200 bg-white p-6 text-slate-900 shadow-sm transition duration-200 hover:-translate-y-1 hover:shadow-xl dark:border-slate-700 dark:bg-slate-900 dark:text-white;
+  }
+  .pricing-card-apply__badge {
+    @apply absolute -top-3 left-6 rounded-full bg-brand-600 px-3 py-1 text-xs font-bold text-white shadow;
+  }
+  .pricing-card-apply__button {
+    @apply mt-8 rounded-xl bg-slate-100 px-4 py-3 font-semibold text-slate-900 transition hover:brightness-110 dark:bg-slate-800 dark:text-white;
+  }
+}
